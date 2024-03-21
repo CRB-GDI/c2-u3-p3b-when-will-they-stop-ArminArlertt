@@ -29,12 +29,21 @@ namespace ProgrammingAssignment2
 				// extract input values from string
 				BuildLinkedListFromString(input);
 
-				// Add your code between this comment
-				// and the comment below. You can of
-				// course add more space between the
-				// comments as needed
-
-
+                // Add your code between this comment
+                // and the comment below. You can of
+                // course add more space between the
+                // comments as needed
+                int numbercount = 0;
+				int sumofnumbers = 0;
+				int value;
+				value = GetValue();
+				while (value > 0)
+				{
+					numbercount++;
+					sumofnumbers += value;
+					value = GetValue();
+				}
+				
 
 				// Don't add or modify any code below
 				// this comment

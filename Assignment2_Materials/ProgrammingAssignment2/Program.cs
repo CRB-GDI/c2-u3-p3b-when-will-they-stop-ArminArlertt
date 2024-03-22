@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -37,17 +38,20 @@ namespace ProgrammingAssignment2
 				int sumofnumbers = 0;
 				int value;
 				value = GetValue();
+				
 				while (value > 0)
 				{
-					numbercount++;
-					sumofnumbers += value;
+					sumofnumbers = ( sumofnumbers + value );
 					value = GetValue();
-				}
-				
+					numbercount ++;
 
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+					
+				}
+                Console.WriteLine(numbercount);
+
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 

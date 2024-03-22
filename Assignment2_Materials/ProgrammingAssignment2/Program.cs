@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -29,16 +30,28 @@ namespace ProgrammingAssignment2
 				// extract input values from string
 				BuildLinkedListFromString(input);
 
-				// Add your code between this comment
-				// and the comment below. You can of
-				// course add more space between the
-				// comments as needed
+                // Add your code between this comment
+                // and the comment below. You can of
+                // course add more space between the
+                // comments as needed
+                int numbercount = 0;
+				int sumofnumbers = 0;
+				int value;
+				value = GetValue();
+				
+				while (value > 0)
+				{
+					sumofnumbers = ( sumofnumbers + value );
+					value = GetValue();
+					numbercount ++;
 
+					
+				}
+                Console.WriteLine(numbercount);
 
-
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
